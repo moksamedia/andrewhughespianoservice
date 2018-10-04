@@ -6167,3 +6167,7 @@ h2.phone-num-top {
     font-size: 15px;
   }
 }
+
+.larger-text {
+	font-size: 30px;
+}
