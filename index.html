@@ -36,6 +36,12 @@
 			<script src="assets/js/html5shiv.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
+
+		<script
+				src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+				crossorigin="anonymous"></script>
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-86278412-1"></script>
 		<script>
@@ -98,14 +104,26 @@
 								<span style="font-weight: bold">100% satisfaction guaranteed!</span> If you're not happy, we're not happy. And we'll return your money.</p>
 								<p class="larger-text">$140 for a basic tune.</p>
 								<p class="larger-text">$40 for a pitch raise. <a class="a-what">(a what?)</a></p>
-								<p class="pitch-raise">A "pitch raise" is a quick, rough tune required before a fine tune if a piano is way out of tune. If a piano is left
-								without a tune for too long, the entire instrument drops in pitch as all of the strings (wires, actually) lose tension. Piano strings exert between
-								18-30 tons of tension on the pinblock and plate. As you can imagine, if you let this tension relax and then suddenly tighten it back up, it causes
-								all of the other parts of the piano to flex. Therefore you have to get a piano at roughly the correct tension before you can make the very fine adjustments
-								to the pins required for a great tune job. Trust me, we wouldn't do it if we didn't have to!</p>
+								<div id="pitch-raise">
+									<p>A "pitch raise" is a quick, rough tune. This is requried before the final tune if a piano is way out of tune. "Way out of tune" is
+										relative and depends a lot on the precision of the final tune required and the abilities of the instrument. As a super rough rule of thumb, if
+										your piano hasn't been tuned in more than a year, it probably needs a pitch raise.</p>
+									<p>Why is a pitch raise necessary? When a piano is left without a tune for too long, the entire instrument drops in pitch as all of the strings
+										(wires, actually) lose tension. Piano strings exert between 18-30 tons of tension on the pinblock and plate. As you can imagine, if you let this tension relax and then suddenly tighten it back up, this causes
+										all of the other parts of the piano to flex. This flexing affects the tension of all the other pins, creating a moving target. As the pins are tightened,
+										the tension (and thus the tuning) of the other strings is affected.</p><p>Therefore you have to get a piano at roughly the correct tension before you can make the very fine adjustments
+										to the pins required for a great tune job. <span style="font-weight: bold">Trust me, we wouldn't do it if we didn't have to!</span> We'd much rather spend 45 minutes regulating and voicing.</p>
+									<p><a href="http://www.ptg.org/document//62/">Here's some info from the Piano Technician's Guild on pitch raises.</a></p>
+								</div>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
+
+					<script>
+                      $(".a-what").click(function () {
+                        $("#pitch-raise").attr("display", "block").slideDown();
+                      });
+					</script>
 
 					<div class="row inner-top-sm text-center">
 

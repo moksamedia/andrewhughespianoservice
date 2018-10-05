@@ -6177,3 +6177,8 @@ h2.phone-num-top {
 	font-size: 22px;
 	vertical-align: bottom;
 }
+
+#pitch-raise {
+	display: none;
+	text-align:left;
+}
